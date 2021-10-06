@@ -1,0 +1,23 @@
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Disable directory browsing
+Options -Indexes
+
+# Hide the contents of directories
+IndexIgnore *
+
+# Deny access to files with extensions
+<FilesMatch "\.(dat)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.+) process.php [L,QSA]
+RewriteRule (install_amo.php) install_amo.php [L,QSA]

@@ -1,0 +1,46 @@
+{
+  "widget": {
+    "name": "widget.name",
+    "description": "widget.description",
+    "short_description": "widget.short_description",
+    "version": "1.0.1",
+    "interface_version": 2,
+    "init_once": false,
+    "locale": [
+      "ru"
+    ],
+    "installation": true,
+    "support": {
+      "link": "https://tgwidget.ru/contacts",
+      "email": "https://tgwidget.ru/contacts"
+    }
+  },
+  "locations": [
+    "digital_pipeline"
+    ,"settings"
+  ],
+  "dp": {
+    "action_multiple": false,
+    "webhook_url": "https://hooks.tgwidget.ru/amo/telegrem_widget/send/telegram?key=1234567890987654321",
+    "title": "settings.dp_name",
+    "settings": {
+      "message_template_text": {
+        "name": "language.message_template_text",
+        "type": "text",
+        "required": true
+      },
+      "sender_telegram_chat_list": {
+        "name": "language.sender_telegram_chat_list",
+        "type": "text",
+        "required": true
+      }
+    }
+  },
+  "settings": {
+   "telegram_key": {
+      "name": "settings.telegram_key",
+      "type": "text",
+      "required": true
+    }
+  }
+}

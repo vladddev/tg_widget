@@ -1,0 +1,10 @@
+#reg-form > * {
+    display: block;
+    margin: 15px;
+}
+#reg-form > *:not(button) {
+    width: 600px;
+}
+#reg-form > textarea {
+    height: 200px;
+}

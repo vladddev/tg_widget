@@ -1,0 +1,17 @@
+{
+    "widget":{
+        "name": "tgwidget. Telegram уведомления",
+        "short_description": "tgwidget. Telegram уведомления",
+        "description": "<div style=\"display: flex; flex-direction: column; font-size: 18px\"><span style=\"font-size: 20px; font-weight: bold\">Виджет&nbsp;уведомлений&nbsp;телеграм</span><span style=\"margin-top: 20px\">Позволяет отправлять оповещения в&nbsp;групповой или личный чат телеграм о&nbsp;новых или уже созданных сделках по&nbsp;заданному шаблону в&nbsp;amoCRM.</span><span>Получайте уведомления об&nbsp;изменениях в&nbsp;цифровой воронке amoCRM по&nbsp;заданным вами условиям.</span><a target=\"_blank\" href=\"https://hooks.tgwidget.ru/amo/telegrem_widget/guide.pdf\" style=\"margin-top: 20px\">Инструкция&nbsp;по&nbsp;установке</a></div>"
+    },
+    "settings": {
+        "widget_key": "Номер телефона",
+        "telegram_key": "API ключ телеграм",
+        "dp_name": "Уведомить по Telegram"
+    },
+    "language" : {
+        "message_template_text": "Шаблон текста сообщения",
+        "sender_telegram_chat_list": "В какие чаты отправляем"
+    }
+}
+
